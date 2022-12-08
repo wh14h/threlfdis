@@ -1,0 +1,10 @@
+Multithreaded ELF disassembler.
+
+Currently only performs disassembly on x86_64 ELF executables.
+
+Use PTH_NUM_THREADS to control the number of threads to create to aid in disassembly.
+
+If capstone could not be found, then try building capstone with the capstone
+submodule included in this project and then run elf_parser.out with
+LD_LIBRARY_PATH set to the libcapstone.so symlink in the current directory.
+
